@@ -4,8 +4,11 @@ This is a base app for Swappd that shows button clicks, navigating to an activit
 
 ## Map
 Instructions:
+
 1. Get an API key from here: https://developers.google.com/maps/documentation/android-api/config
+
 2. Put the API key in the file "$HOME/.gradle/gradle.properties" on your computer with the syntax: GOOGLE_MAPS_API_KEY="YOUR_API_KEY"
+
 3. Verify you have Google Repository in the SDK Manage > SDK Tools installed. More details at the top of this page: https://developers.google.com/android/guides/setup
 
 Configurations I made:
