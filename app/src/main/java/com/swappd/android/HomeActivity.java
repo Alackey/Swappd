@@ -13,6 +13,7 @@ public class HomeActivity extends AppCompatActivity {
 
     // Elements
     private Button backBtn;
+    private Button mapBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         // Instantiate TAG for debugging
         TAG = "HomeActivity";
 
-        // Instantiate  button with onClick event
+        // Instantiate back button with onClick event
         backBtn = (Button) findViewById(R.id.backBtn);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,19 @@ public class HomeActivity extends AppCompatActivity {
 
                 // Finish activity and go back
                 finish();
+            }
+        });
+
+        // Instantiate map button with onClick event
+        mapBtn = (Button) findViewById(R.id.mapBtn);
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG, "Map button clicked");
+
+                // Navigate to MapActivity
+                Intent intent = new Intent(HomeActivity.this, MapActivity.class);
+                startActivity(intent);
             }
         });
     }

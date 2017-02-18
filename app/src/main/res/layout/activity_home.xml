@@ -26,6 +26,12 @@
         android:id="@+id/button4" />
 
     <Button
+        android:text="@string/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapBtn" />
+
+    <Button
         android:text="@string/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
