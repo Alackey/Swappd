@@ -14,6 +14,7 @@ Configurations I made:
     * Put the API key in the file "$HOME/.gradle/gradle.properties" on your computer with the syntax: GOOGLE_MAPS_API_KEY="YOUR_API_KEY"
     * Add this to build.gradle in app folder: resValue "string", "GOOGLE_MAPS_API_KEY", GOOGLE_MAPS_API_KEY
     * Added this to to AndroidManifest.xml:
+    
         ```XML
         <meta-data
             android:name="com.google.android.geo.API_KEY"
