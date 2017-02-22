@@ -12,6 +12,7 @@ public class HomeActivity extends AppCompatActivity {
     private String TAG;
 
     // Elements
+    private Button rideBtn;
     private Button backBtn;
 
     @Override
@@ -21,6 +22,18 @@ public class HomeActivity extends AppCompatActivity {
 
         // Instantiate TAG for debugging
         TAG = "HomeActivity";
+
+        // Instantiate ride button with onClick
+        rideBtn = (Button) findViewById(R.id.registerBtn);
+        rideBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG, "Ride button clicked");
+
+                Intent intent = new Intent(HomeActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Instantiate  button with onClick event
         backBtn = (Button) findViewById(R.id.backBtn);

@@ -10,6 +10,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "AWS_COGNITO_POOL_ID", "AWS_COGNITO_POOL_ID"
+        buildConfigField "String", "AWS_COGNITO_CLIENT_ID", "AWS_COGNITO_CLIENT_ID"
+        buildConfigField "String", "AWS_COGNITO_CLIENT_SECRET", "AWS_COGNITO_CLIENT_SECRET"
     }
     buildTypes {
         release {
@@ -26,4 +30,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
+
+    compile 'com.amazonaws:aws-android-sdk-core:2.2.+'
+    compile 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.2.+'
 }
